@@ -9,7 +9,7 @@ class ArchivesTest < ApplicationSystemTestCase
  	visit archives_index_url
 
  	assert_selector "h1", text: "Foodlog"
- 	assert_selector "h3", text: "Entries for #{@entry.day}"
+ 	assert_selector "h3", text: "Entries for #{@entry.day}" #testing error
  	assert text: @entry.meal_type
  end
 end

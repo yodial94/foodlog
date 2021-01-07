@@ -7,7 +7,7 @@ class EntriesTest < ApplicationSystemTestCase
 
   test "visiting the index" do
     visit entries_url
-    assert_selector "h1", text: "Foodlog - #{DateTime.now.to_s(:nice_date)}"
+    assert_selector "h1", text: "Foodlog - #{DateTime.now.to_s(:nice_date)}" #testing error
   end
 
   test "creating a Entry" do
